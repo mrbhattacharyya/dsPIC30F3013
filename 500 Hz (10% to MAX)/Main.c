@@ -45,7 +45,7 @@ int main (void)
         Timer1_Init();  
      	Timer3_Init();
 		while (1)
-		{	
+		{			//PART 1
 			if (ADC_flg == 1)
 			{
 				count++;
@@ -54,6 +54,10 @@ int main (void)
 					ADC_Read();			
 					temp_Duty= floor((sf*data1)+0.5);
 					count =0;					
+					
+					
+						//PART 2
+					
 					
 					if	(flag>=18) 
 					{
