@@ -18,22 +18,6 @@ void IO_Init(void)
 }    
 
 
-
-
-/*void Timer_Init(void)
-{
-        T2CON = 0x0030;         //Timer1 set up to count on instruction cycle
-                                //edge with 1:256 prescaler applied initially.
-        PR2 = PERIOD;           //Period Register, PR1, set to maximum count
-        IFS0bits.T2IF = 0;      //Clear the Timer1 Interrupt Flag
-        IEC0bits.T2IE = 1;      //Enable Timer2 Interrupt Service Routine
-        T2CONbits.TON=0;        //Start Timer 2
-
-                                        //edge with 1:256 prescaler applied initially.
-        
-}*/
-
-
 void ADC_Init(void)
 {
         ADCON1bits.ADON = 0;	//A/D is off
